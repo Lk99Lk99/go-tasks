@@ -5,5 +5,11 @@ package tables
 // Liefert -1, falls der Wert nicht in der Liste vorkommt.
 func Find(list []string, v string) int {
 	// TODO
-	return 0
+
+	for step := 0; step < len(list); step++ {
+		if v == list[step] {
+			return step
+		}
+	}
+	return -1
 }
