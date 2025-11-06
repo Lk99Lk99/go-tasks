@@ -5,5 +5,16 @@ package tables
 // Falls die Zeilen unterschiedliche Längen haben, wird für fehlende Werte ein leerer String geliefert.
 func GetColumn(table [][]string, col int) []string {
 	// TODO
-	return []string{}
+
+	var result []string
+
+	for _, row := range table {
+		if col < len(row) {
+			result = append(result, row[col])
+		} else {
+			result = append(result, "")
+		}
+	}
+
+	return result
 }

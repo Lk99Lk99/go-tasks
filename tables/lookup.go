@@ -6,5 +6,8 @@ package tables
 // in l1 nicht vorkommt oder falls die gefundene Position nicht in l2 vorkommt.
 func Lookup(l1, l2 []string, v string) string {
 	// TODO
+
+	if 
+
 	return ""
 }
